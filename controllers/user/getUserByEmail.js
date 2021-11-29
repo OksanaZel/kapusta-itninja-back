@@ -12,7 +12,7 @@ const getUserByEmail = async (req, res) => {
     throw new Unauthorized('Email or password is wrong');
   }
 
-  sendSuccessResponse(res, { user }, 200);
+  sendSuccessResponse(res, { user });
 };
 
 module.exports = getUserByEmail;
