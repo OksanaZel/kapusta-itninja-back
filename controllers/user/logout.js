@@ -8,7 +8,7 @@ const logout = async (req, res) => {
   if (!user) {
     throw new Unauthorized('Not authorized');
   }
-  sendSuccessResponse(res, null, 200);
+  sendSuccessResponse(res, null);
 };
 
 module.exports = logout;

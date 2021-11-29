@@ -15,7 +15,7 @@ const addBalance = async (req, res) => {
     throw new BadRequest('Email is not verify');
   }
   await User.findByIdAndUpdate(_id, { balance });
-  sendSuccessResponse(res, { balance }, 200);
+  sendSuccessResponse(res, { balance });
 };
 
 module.exports = addBalance;

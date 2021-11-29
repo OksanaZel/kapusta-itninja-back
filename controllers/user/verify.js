@@ -10,7 +10,7 @@ const verify = async (req, res) => {
   }
 
   await User.findByIdAndUpdate(user._id, { verifyToken: null, verify: true });
-  sendSuccessResponse(res, { message: 'Verification successful' }, 200);
+  sendSuccessResponse(res, { message: 'Verification successful' });
 };
 
 module.exports = verify;

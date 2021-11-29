@@ -35,7 +35,7 @@ const repeatVerification = async (req, res) => {
   };
 
   await sendEmail(msg);
-  sendSuccessResponse(res, { message: 'Verification email sent' }, 200);
+  sendSuccessResponse(res, { message: 'Verification email sent' });
 };
 
 module.exports = repeatVerification;

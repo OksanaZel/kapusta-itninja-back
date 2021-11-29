@@ -46,7 +46,7 @@ const getExpenseReportByMonth = async (req, res) => {
     throw new BadRequest(`There are no transactions on this month`);
   }
 
-  sendSuccessResponse(res, { finalReportArray }, 200);
+  sendSuccessResponse(res, { finalReportArray });
 };
 
 module.exports = getExpenseReportByMonth;
